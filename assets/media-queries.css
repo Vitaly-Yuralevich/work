@@ -1,0 +1,105 @@
+            @media screen and (max-width:1220px) {
+                .container {
+                    width: 940px;
+                }
+            }
+            
+            @media (max-width:768px) {
+                .container {
+                    width: 748px;
+                }
+                .header__panel {
+                    justify-content: space-around;
+                }
+                .nav {
+                    width: 400px;
+                    font-size: 13px;
+                }
+                .itro {
+                    display: block;
+                }
+                .intro__title {
+                    font-size: 22px;
+                }
+                .our-story {
+                    width: 748px;
+                    justify-content: space-around;
+                }
+                .our-story__about {
+                    width: 400px;
+                }
+                .expertize__list {
+                    width: 748px;
+                }
+                .expertize__item {
+                    width: 240px;
+                }
+                .team {
+                    height: 650px;
+                }
+                .team__list {
+                    justify-content: space-around;
+                }
+                .team__item {
+                    width: 170px;
+                    height: 240px;
+                }
+                .team__item-title::before {
+                    width: 168px;
+                    height: 170px;
+                }
+                .work {
+                    height: 1200px;
+                }
+                .work__top-panel {
+                    justify-content: space-around;
+                }
+                .work__list {
+                    height: 830px;
+                    grid-template-columns: 33.3333% 33.3333% 33.3333%;
+                    grid-template-rows: 200px 200px 200px 200px 200px 200px;
+                    opacity: 1;
+                }
+                .textimonials__text {
+                    width: 635px;
+                }
+                .contact {
+                    width: 748px;
+                    height: 1250px;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                }
+                .contact__title {
+                    text-align: center;
+                }
+                .post__text {
+                    width: 100%;
+                }
+                .post__button {
+                    margin: auto;
+                }
+                .contact__panel {
+                    width: 500px;
+                }
+                .contact__list {
+                    justify-content: space-around;
+                }
+                .contact__title-logo {
+                    text-align: center;
+                }
+                .footer__info {
+                    margin-left: 15px;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+                }
+                .footer__title {
+                    margin: 10px 0 15px;
+                }
+                .footer {
+                    height: 520px;
+                }
+                .footer__nav {
+                    justify-content: space-around;
+                }
+            }
