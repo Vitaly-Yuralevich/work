@@ -1,0 +1,132 @@
+        .team {
+            display: flex;
+            text-align: center;
+            height: 712px;
+            background: url("../assets/images/forest2.png") center no-repeat;
+            background-size: cover;
+            color: $white;
+        }
+        
+        .team__title {
+            margin-top: 71px;
+            font-size: 22px;
+            text-transform: uppercase;
+            font-family: 'Playfair Display Bold';
+        }
+        
+        .team__ text {
+            font-family: 'PlayfairDisplayRegular', Tahoma, sans-serif;
+            &:after {
+                width: 50px;
+                margin: 18px auto;
+                content: "";
+                display: block;
+                height: 2px;
+                background-color: #655c80;
+            }
+        }
+        
+        .team__list {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 43px;
+            width: 100%;
+        }
+        
+        .team__item {
+            width: 220px;
+            height: 308px;
+            border: 1px solid #7b6e9e;
+        }
+        
+        .team__item-title {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-family: 'Roboto-Black', Tahoma, sans-serif;
+            color: $white;
+            &:hover {
+                color: #635f7e;
+            }
+            &::before {
+                content: "";
+                display: block;
+                margin-bottom: 15px;
+                width: 218px;
+                height: 230px;
+                border: 1px solid $white;
+                background-color: $white;
+            }
+        }
+        
+        .team__item-text {
+            margin: 0 auto;
+            font-size: 13px;
+            color: #b0afbe;
+            text-transform: uppercase;
+            font-family: 'Roboto-Light', Tahoma, sans-serif;
+        }
+        
+        .team__subtitle {
+            margin-top: 70px;
+            color: #c9c8d1;
+            font-family: 'Roboto-Light', Tahoma, sans-serif;
+        }
+        
+        .team__button {
+            display: block;
+            margin: 18px auto;
+            width: 140px;
+        }
+        
+        @media screen and (max-width:$desktop) {
+            .team {
+                height: 650px;
+            }
+            .team__list {
+                justify-content: space-around;
+            }
+            .team__item {
+                width: 170px;
+                height: 240px;
+            }
+            .team__item-title::before {
+                width: 168px;
+                height: 170px;
+            }
+        }
+        
+        @media screen and (max-width:$tablet) {
+            .team__item {
+                width: 120px;
+                height: 170px;
+            }
+            .team__item-title::before {
+                width: 118px;
+                height: 100px;
+            }
+        }
+        
+        @media screen and (max-width:$large-mobile) {
+            .team {
+                height: 780px;
+            }
+            .team__list {
+                display: flex;
+                flex-flow: row wrap;
+                margin-top: 43px;
+                width: 100%;
+            }
+            .team__item {
+                width: 130px;
+                margin: 10px;
+            }
+            .team__item-title::before {
+                width: 128px;
+                height: 110px;
+            }
+            .team__subtitle {
+                margin-top: 20px;
+            }
+        }

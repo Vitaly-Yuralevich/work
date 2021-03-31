@@ -1,0 +1,53 @@
+            body {
+                margin: 0;
+                font-size: 14px;
+                line-height: 1.4;
+                color: #817f86;
+            }
+            
+            *,
+            *::before,
+            *::after {
+                box-sizing: border-box;
+            }
+            
+            .list {
+                list-style-type: none;
+                padding: 0;
+            }
+            
+            .container {
+                width: 100%;
+                max-width: 940px;
+                margin: 0 auto;
+            }
+            
+            @media screen and (max-width:1220px) {
+                .container {
+                    width: 940px;
+                }
+            }
+            
+            @media screen and (max-width:$desktop) {
+                .container {
+                    width: 748px;
+                }
+            }
+            
+            @media screen and (max-width:$tablet) {
+                .container {
+                    width: 480px;
+                }
+            }
+            
+            @media screen and (max-width:$large-mobile) {
+                .container {
+                    width: 320px;
+                }
+            }
+            
+            @media screen and (max-width:$small-mobile) {
+                .container {
+                    width: 300px;
+                }
+            }

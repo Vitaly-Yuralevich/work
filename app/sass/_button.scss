@@ -1,0 +1,18 @@
+    .button {
+        height: 40px;
+        width: 120px;
+        padding-top: 13px;
+        text-align: center;
+        border: 1px solid $l-blue;
+        color: $l-blue;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: color 0.1s;
+        font-family: 'HammersmithOne-Regular', Tahoma, sans-serif;
+        font-size: 16px;
+        line-height: 1;
+        &:hover {
+            background-color: $l-blue;
+            color: $white;
+        }
+    }

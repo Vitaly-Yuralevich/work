@@ -1,0 +1,92 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro__title {
+    margin: 166px auto 0;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1;
+    text-transform: capitalize;
+    color: $white;
+    font-family: 'PlayfairDisplay-Black', Tahoma, sans-serif;
+    &::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 1px;
+        margin: 27px auto;
+        background-color: $blue;
+    }
+}
+
+.intro__text {
+    margin-top: 3px;
+    width: 690px;
+    text-align: center;
+    color: $white;
+    font-family: 'Roboto-Light', Tahoma, sans-serif;
+}
+
+.intro__button {
+    margin-top: 53px;
+}
+
+.intro__list {
+    display: flex;
+    margin: 100px auto 0;
+    justify-content: space-around;
+    width: 55px;
+    height: 10px;
+}
+
+.intro__item {
+    padding: 0;
+    border: 1px solid $white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+@media screen and (max-width: $desktop) {
+    .itro {
+        display: block;
+    }
+    .intro__title {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    .intro__title {
+        margin-top: 100px;
+    }
+    .intro__text {
+        width: 480px;
+    }
+}
+
+@media screen and (max-width: $large-mobile) {
+    .intro__text {
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: $small-mobile) {
+    .intro__title {
+        margin-top: 50px;
+    }
+    .intro__text {
+        margin-top: 10px;
+        width: 300px;
+        text-align: justify;
+    }
+    .intro__list {
+        margin-top: 50px;
+    }
+}
