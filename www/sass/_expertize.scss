@@ -1,0 +1,143 @@
+.expertize {
+    height: 754px;
+}
+
+.expertize__title {
+    margin: 0;
+    padding-top: 51px;
+    text-transform: uppercase;
+    color: #413d4b;
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Playfair Display Bold', Tahoma, sans-serif;
+}
+
+.expertize__text {
+    color: #78767c;
+    text-align: center;
+    -family: 'PlayfairDisplayRegular', Tahoma, sans-serif;
+    &::afterfont {
+        content: "";
+        display: block;
+        margin: 22px auto;
+        width: 50px;
+        height: 2px;
+        background-color: #c6c4c9;
+    }
+}
+
+.expertize__item {
+    padding-top: 32px;
+    text-decoration: none;
+    height: 250px;
+    text-align: center;
+    width: 310px;
+    transition: color 0.2s;
+    &::before {
+        content: "";
+        display: block;
+        margin: 0 auto 30px;
+        width: 50px;
+        height: 50px;
+    }
+    &_monitor::before {
+        background: url("../images/monitor.png") center no-repeat;
+    }
+    &-title {
+        color: #333;
+        text-transform: uppercase;
+        font-size: 14px;
+        text-decoration: none;
+        font-family: 'Roboto-Black', Tahoma, sans-serif;
+    }
+    &-text {
+        margin: 0 auto;
+        padding-top: 20px;
+        width: 230px;
+        font-size: 14px;
+        color: #8f8f8f;
+        font-family: 'Roboto-Light', Tahoma, san s-serif;
+    }
+    &_monitor {
+        border-bottom: 1px solid $l-grey;
+    }
+    &_pen {
+        border-left: 1px solid $l-grey;
+        border-right: 1px solid $l-grey;
+        border-bottom: 1px solid $l-grey;
+        &::before {
+            background: url("../images/pen.png") center no-repeat;
+        }
+    }
+    &_mobile {
+        border-bottom: 1px solid $l-grey;
+        &::before {
+            background: url("../images/mobile.png") center no-repeat;
+        }
+    }
+    &_diagram::before {
+        background: url("../images/diagram.png") center no-repeat;
+    }
+    &_gamepad {
+        border-left: 1px solid $l-grey;
+        border-right: 1px solid $l-grey;
+        &::before {
+            background: url("../images/gamepad.png") center no-repeat;
+        }
+    }
+    &_heart::before {
+        background: url("../images/heart.png") center no-repeat;
+    }
+}
+
+.expertize__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 49px;
+    width: 940px;
+    height: 500px;
+}
+
+@media screen and (max-width:$desktop) {
+    .expertize__list {
+        width: 748px;
+    }
+    .expertize__item {
+        width: 240px;
+    }
+}
+
+@media screen and (max-width:$tablet) {
+    .expertize {
+        height: 950px;
+    }
+    .expertize__list {
+        width: 480px;
+    }
+    .expertize__item {
+        width: 235px;
+        border: 1px solid #ebebeb;
+    }
+}
+
+@media screen and (max-width:$large-mobile) {
+    .expertize {
+        height: 1754px;
+    }
+    .expertize__list {
+        width: 320px;
+    }
+    .expertize__item {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:$small-mobile) {
+    .expertize__list {
+        width: 300px;
+    }
+    .expertize__item {
+        width: 240px;
+    }
+}
